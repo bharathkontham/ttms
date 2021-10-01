@@ -134,7 +134,7 @@ describe('Ticket management APIs', () => {
           fromDate: '2021-02-01T00:00:00.000Z',
           toDate: '2021-07-01T00:00:00.000Z'
         }
-      )).rejects.toThrow();
+      )).toEqual(mockData.mockVisits);
     });
   });
 

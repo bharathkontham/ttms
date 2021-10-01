@@ -1,0 +1,10 @@
+{
+  "loopback-component-explorer": {
+    "apiInfo": {
+      "title": "Ticket Management for Theatres",
+      "description": "Explore Ticket Management for Theatres APIs"
+    },
+    "mountPath": "/explorer",
+    "generateOperationScopedModels": true
+  }
+}

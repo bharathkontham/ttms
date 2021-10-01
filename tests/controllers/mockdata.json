@@ -1,0 +1,504 @@
+{
+  "mockDBAggregationResponseEarnings": {
+    "body": {
+      "took": 2,
+      "timed_out": false,
+      "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+      },
+      "hits": {
+        "total": {
+          "value": 26,
+          "relation": "eq"
+        },
+        "max_score": null,
+        "hits": []
+      },
+      "aggregations": {
+        "sales_per_month": {
+          "buckets": [
+            {
+              "key_as_string": "February 2021",
+              "key": 1612137600000,
+              "doc_count": 5,
+              "summaryProfit": {
+                "value": 12979.0
+              }
+            },
+            {
+              "key_as_string": "March 2021",
+              "key": 1614556800000,
+              "doc_count": 5,
+              "summaryProfit": {
+                "value": 16554.0
+              }
+            },
+            {
+              "key_as_string": "April 2021",
+              "key": 1617235200000,
+              "doc_count": 6,
+              "summaryProfit": {
+                "value": 28055.0
+              }
+            },
+            {
+              "key_as_string": "May 2021",
+              "key": 1619827200000,
+              "doc_count": 5,
+              "summaryProfit": {
+                "value": 27573.0
+              }
+            },
+            {
+              "key_as_string": "June 2021",
+              "key": 1622505600000,
+              "doc_count": 5,
+              "summaryProfit": {
+                "value": 10385.0
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "mockDBAggregationResponseVisits": {
+    "body": {
+      "took": 2,
+      "timed_out": false,
+      "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+      },
+      "hits": {
+        "total": {
+          "value": 26,
+          "relation": "eq"
+        },
+        "max_score": null,
+        "hits": []
+      },
+      "aggregations": {
+        "people_visited": {
+          "buckets": [
+            {
+              "key_as_string": "February 2021",
+              "key": 1612137600000,
+              "doc_count": 5
+            },
+            {
+              "key_as_string": "March 2021",
+              "key": 1614556800000,
+              "doc_count": 5
+            },
+            {
+              "key_as_string": "April 2021",
+              "key": 1617235200000,
+              "doc_count": 6
+            },
+            {
+              "key_as_string": "May 2021",
+              "key": 1619827200000,
+              "doc_count": 5
+            },
+            {
+              "key_as_string": "June 2021",
+              "key": 1622505600000,
+              "doc_count": 5
+            }
+          ]
+        }
+      }
+    }
+  },
+  "mockEarnings": [
+    {
+      "month": "February 2021",
+      "summaryProfit": 12979
+    },
+    {
+      "month": "March 2021",
+      "summaryProfit": 16554
+    },
+    {
+      "month": "April 2021",
+      "summaryProfit": 28055
+    },
+    {
+      "month": "May 2021",
+      "summaryProfit": 27573
+    },
+    {
+      "month": "June 2021",
+      "summaryProfit": 10385
+    }
+  ],
+  "mockVisits": [
+    {
+      "month": "February 2021",
+      "summaryVisits": 5
+    },
+    {
+      "month": "March 2021",
+      "summaryVisits": 5
+    },
+    {
+      "month": "April 2021",
+      "summaryVisits": 6
+    },
+    {
+      "month": "May 2021",
+      "summaryVisits": 5
+    },
+    {
+      "month": "June 2021",
+      "summaryVisits": 5
+    }
+  ],
+  "mockFindResponse": [
+    {
+      "id": "Hy1GTHoBrEQdYcrGzby5",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-02-01T03:20:12.102Z",
+      "price": 100,
+      "createdAt": "2021-02-01T03:20:12.102Z",
+      "_search_after": [
+        1612149612102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "IC1HTHoBrEQdYcrGArxA",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-02-05T03:20:12.102Z",
+      "price": 1000,
+      "createdAt": "2021-02-05T03:20:12.102Z",
+      "_search_after": [
+        1612495212102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "IS1HTHoBrEQdYcrGirx0",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-02-10T03:20:12.102Z",
+      "price": 5334,
+      "createdAt": "2021-02-10T03:20:12.102Z",
+      "_search_after": [
+        1612927212102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "Ii1HTHoBrEQdYcrGrbzu",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-02-15T03:20:12.102Z",
+      "price": 3213,
+      "createdAt": "2021-02-15T03:20:12.102Z",
+      "_search_after": [
+        1613359212102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "Iy1HTHoBrEQdYcrG2Lxl",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-02-21T03:20:12.102Z",
+      "price": 3332,
+      "createdAt": "2021-02-21T03:20:12.102Z",
+      "_search_after": [
+        1613877612102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "JS1ITHoBrEQdYcrGKrxk",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-03-01T03:20:12.102Z",
+      "price": 432,
+      "createdAt": "2021-03-01T03:20:12.102Z",
+      "_search_after": [
+        1614568812102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "Ji1ITHoBrEQdYcrGTbyo",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-03-05T03:20:12.102Z",
+      "price": 4328,
+      "createdAt": "2021-03-05T03:20:12.102Z",
+      "_search_after": [
+        1614914412102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "Jy1ITHoBrEQdYcrGgrwu",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-03-10T03:20:12.102Z",
+      "price": 887,
+      "createdAt": "2021-03-10T03:20:12.102Z",
+      "_search_after": [
+        1615346412102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "KC1ITHoBrEQdYcrGt7yW",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-03-19T03:20:12.102Z",
+      "price": 6452,
+      "createdAt": "2021-03-19T03:20:12.102Z",
+      "_search_after": [
+        1616124012102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "JC1HTHoBrEQdYcrG_bzH",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-03-21T03:20:12.102Z",
+      "price": 4455,
+      "createdAt": "2021-03-21T03:20:12.102Z",
+      "_search_after": [
+        1616296812102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "KS1JTHoBrEQdYcrGArzx",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-04-01T03:20:12.102Z",
+      "price": 2356,
+      "createdAt": "2021-04-01T03:20:12.102Z",
+      "_search_after": [
+        1617247212102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "Ki1JTHoBrEQdYcrGJrxW",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-04-05T03:20:12.102Z",
+      "price": 7868,
+      "createdAt": "2021-04-05T03:20:12.102Z",
+      "_search_after": [
+        1617592812102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "Ky1JTHoBrEQdYcrGWrwj",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-04-10T03:20:12.102Z",
+      "price": 8373,
+      "createdAt": "2021-04-10T03:20:12.102Z",
+      "_search_after": [
+        1618024812102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "LC1JTHoBrEQdYcrGrrzf",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-04-14T03:20:12.102Z",
+      "price": 1867,
+      "createdAt": "2021-04-14T03:20:12.102Z",
+      "_search_after": [
+        1618370412102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "LS1JTHoBrEQdYcrG5LwZ",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-04-18T03:20:12.102Z",
+      "price": 3091,
+      "createdAt": "2021-04-18T03:20:12.102Z",
+      "_search_after": [
+        1618716012102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "Li1KTHoBrEQdYcrGErwu",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-04-23T03:20:12.102Z",
+      "price": 4500,
+      "createdAt": "2021-04-23T03:20:12.102Z",
+      "_search_after": [
+        1619148012102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "My1KTHoBrEQdYcrGybzr",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-05-03T03:20:12.102Z",
+      "price": 10728,
+      "createdAt": "2021-05-03T03:20:12.102Z",
+      "_search_after": [
+        1620012012102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "Mi1KTHoBrEQdYcrGqbxv",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-05-08T03:20:12.102Z",
+      "price": 1728,
+      "createdAt": "2021-05-08T03:20:12.102Z",
+      "_search_after": [
+        1620444012102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "MS1KTHoBrEQdYcrGfrze",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-05-13T03:20:12.102Z",
+      "price": 728,
+      "createdAt": "2021-05-13T03:20:12.102Z",
+      "_search_after": [
+        1620876012102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "MC1KTHoBrEQdYcrGXrw-",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-05-17T03:20:12.102Z",
+      "price": 9879,
+      "createdAt": "2021-05-17T03:20:12.102Z",
+      "_search_after": [
+        1621221612102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "Ly1KTHoBrEQdYcrGNrxx",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-05-23T03:20:12.102Z",
+      "price": 4510,
+      "createdAt": "2021-05-23T03:20:12.102Z",
+      "_search_after": [
+        1621740012102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "NC1KTHoBrEQdYcrG_bwu",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-06-03T03:20:12.102Z",
+      "price": 644,
+      "createdAt": "2021-06-03T03:20:12.102Z",
+      "_search_after": [
+        1622690412102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "NS1LTHoBrEQdYcrGJLzL",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-06-07T03:20:12.102Z",
+      "price": 6434,
+      "createdAt": "2021-06-07T03:20:12.102Z",
+      "_search_after": [
+        1623036012102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "OC1rTHoBrEQdYcrG7bw4",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-06-17T03:20:12.102Z",
+      "price": 321,
+      "createdAt": "2021-06-17T03:20:12.102Z",
+      "_search_after": [
+        1623900012102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "Ni1rTHoBrEQdYcrGr7wY",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-06-23T03:20:12.102Z",
+      "price": 2332,
+      "createdAt": "2021-06-23T03:20:12.102Z",
+      "_search_after": [
+        1624418412102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    },
+    {
+      "id": "Ny1rTHoBrEQdYcrG0bwI",
+      "customerName": "bharath",
+      "performanceTitle": "hello",
+      "performanceTime": "2021-06-27T03:20:12.102Z",
+      "price": 654,
+      "createdAt": "2021-06-27T03:20:12.102Z",
+      "_search_after": [
+        1624764012102
+      ],
+      "_total_count": 26,
+      "docType": "Ticket"
+    }
+  ],
+  "mockCountResponse": 26
+}

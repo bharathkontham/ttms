@@ -1,0 +1,25 @@
+{
+  "ticketMapping": {
+    "docType": {
+      "type": "keyword"
+    },
+    "id": {
+      "type": "keyword"
+    },
+    "customerName": {
+      "type": "text"
+    },
+    "performanceTitle": {
+      "type": "text"
+    },
+    "performanceTime": {
+      "type": "date"
+    },
+    "price": {
+      "type": "double"
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  }
+}
